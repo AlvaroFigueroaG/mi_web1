@@ -1,0 +1,119 @@
+        @charset "utf-8";
+
+        @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+        /* Selector universal */
+
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        * {
+            color: red;
+        }
+
+        /* Esto anula y sustituye al anterior */
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: black;
+            font-family: 'Libre Baskerville', serif;
+        }
+
+        li,
+        a,
+        p {
+            color: dimgray;
+        }
+
+        header h1 {
+            /* La propiedad height establece el alto */
+            height: 50px;
+            /* La propiedad padding es el relleno */
+            padding: 8px;
+            /* La propiedad background-color es el color de fondo */
+            background-color: gray;
+        }
+
+        nav {
+            /* Esto es un borde de 1px, liso en color rojo */
+            border: 1px solid red;
+
+        }
+
+        /* Esto establece la visibilidad en pantalla en ninguna */
+        nav h2 {
+            display: none;
+        }
+
+        article {
+            /* Esto establece el ancho de todos los article */
+            width: 40%;
+            /* Esto establece el relleno de todos los article */
+            padding: 10px;
+            /* Esto establece el margen de todos los article */
+            /* Equivale a: */
+            /* margin: 3% 3% 3% 3% */
+            /* margin: 3% 3% */
+            /* margin-top: 3%; */
+            /* margin-right: 3%; */
+            /* margin-bottom: 3%; */
+            /* margin-left: 3%; */
+            margin: 3%;
+
+            /* Esto establece el borde de todos los article */
+            border: 1px solid black;
+        }
+
+        /*Esto establece el ancho al 100% para todos los article */
+        /* herederos de otro article heredero de una section */
+        section article article {
+            width: 100%;
+        }
+
+        /*Esta declaración anula y sustituye a las anteriores */
+        section article {
+            width: 100%;
+            margin-left: 0;
+            margin-right: 0;
+            /* Esto es lo mismo */
+            margin: 3% 0;
+        }
+
+        article article p {
+            background-color: lightgreen;
+        }
+
+        article,
+        article p,
+        article h2 {
+            /* Esto establece el color de fondo en blanco para: */
+            /* Todos los article */
+            /* coma */
+            /* Todos los párrafos herederos de un article */
+            /* coma */
+            /* Todos los h2 herederos de un article */
+            background-color: white;
+        }
+
+        footer {
+            /* Esto establece el alto del footer en 80px */
+            height: 80px;
+            /* Esto establece el alto de la línea de texto */
+            /* Como le ponemos el mismo que el height */
+            /* Centramos una línea de texto verticalmente */
+            line-height: 80px;
+            /* Esto establece el relleno del footer en 10px */
+            padding: 10px;
+            /* Esto establece que el texto del footer se alinee en el centro */
+            text-align: center;
+            /* Esto establece el color de fondo del footer en negro */
+            background-color: black;
+            /* Esto establece el color del texto del footer en blanco */
+            color: white;
+        }
