@@ -37,6 +37,9 @@
             <article>
                 <h3>Incluir CSS en el mismo documento HTML</h3>
                 <p>
+                    referencia: <a href="https://uniwebsidad.com/libros/css/capitulo-6">Uniwebsidad</a>
+                </p>
+                <p>
                     Los estilos se definen en una zona específica del propio documento HTML.
                 <p>
                     Se emplea la etiqueta <em>style</em> de HTML y solamente se pueden incluir en la cabecera del documento (sólo dentro de la sección <em>head</em>).
@@ -52,8 +55,18 @@
                 </p>
             </article>
             <article>
-                <h3>Definir CSS en un archivo externo</h3>
-                <p>
+                <h3 class="pepe">Definir CSS en un archivo externo</h3>
+                <p class="todomayusculas pepe">
+                    Este texto está en small-caps
+                </p>
+                <p class="alineadoderecha">
+                    Este texto está alineado a la derecha
+                </p>
+                <p class="alineadocentro">
+                    Este texto está alineado al centro
+
+                </p>
+                <p class="alineadojustificado">
                     En este caso, todos los estilos CSS se incluyen en un archivo de tipo CSS que las páginas HTML enlazan mediante la etiqueta <em>link</em>. Un archivo de tipo CSS no es más que un archivo simple de texto cuya extensión es .css Se pueden crear todos los archivos CSS que sean necesarios y cada página HTML puede enlazar tantos archivos CSS como necesite.
                 </p>
                 <p>
@@ -69,8 +82,50 @@
                     </li>
                     <li>En la página HTML se enlaza el archivo CSS externo mediante la etiqueta <em>link:</em></li>
                 </ol>
-
             </article>
+
+            <article>
+                <h3>Prioridades en CSS</h3>
+                <ol>
+                    <li id="violeta" class="rosa">Selector de id (color violeta)</li>
+                    <li class="rosa">Selector de clase (color rosa)</li>
+                    <li>Selector varias etiquetas anidadas (color azul)</li>
+                    <li>Selector 1 etiqueta color tomato</li>
+                </ol>
+                <h3>Estilos para textos</h3>
+                <table class="azul">
+                    <caption>Tipografía</caption>
+                    <thead>
+                        <tr>
+                            <th>Propiedad</th>
+                            <th>Descripción</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>color</td>
+                            <td>Color web</td>
+                        </tr>
+                        <tr>
+                            <td>font-family</td>
+                            <td>Fonts web</td>
+                        </tr>
+                        <tr>
+                            <td>font-size</td>
+                            <td>Tamaño web</td>
+                        </tr>
+                        <tr>
+                            <td>font-weight</td>
+                            <td>Grosor letra</td>
+                        </tr>
+                        <tr>
+                            <td>font-style</td>
+                            <td>Normal o italic</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
             <article>
                 <h2>Lorem 3</h2>
                 <p>
@@ -117,4 +172,6 @@
     <footer>
         <h2>Pie de Página</h2>
     </footer>
-</body></html>
+</body>
+
+</html>
